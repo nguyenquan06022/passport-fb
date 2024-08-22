@@ -42,8 +42,8 @@ app.listen(port,() => {
 
 passport.use(new Strategy(
     {
-        clientID:'1180957129864357',
-        clientSecret:'616fb9582da23e6eadbbe51bd0b79e36',
+        clientID:'467162692888465',
+        clientSecret:'04940e51c6167f2d4784d04fa1e44fdb',
         callbackURL:'https://passport-fb.onrender.com/auth/facebook/cb',
         profileFields:['email', 'gender', 'locale', 'displayName']
     },
