@@ -5,6 +5,7 @@ const passport = require('passport')
 const Strategy = require('passport-facebook').Strategy
 const db = require('./connectDB')
 const model = require('./Model')
+const port = process.env.PORT || 3000
 
 var app = express()
 
@@ -35,7 +36,7 @@ app.get('/auth/facebook/cb', passport.authenticate('facebook', {
     res.json(user)
 });
 
-app.listen(5000,() => {
+app.listen(port,() => {
     console.log('server running...')
 })
 
